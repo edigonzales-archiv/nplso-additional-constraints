@@ -256,7 +256,37 @@ VERSION "2017-01-05"  =
     !!MANDATORY CONSTRAINT (Typ_Kt == #N111_Wohnzone_2_G) OR (Typ_Kt == #N140_Kernzone);
     !!MANDATORY CONSTRAINT (Nutzungsziffer_Art == #Geschossflaechen) OR NOT (Typ_Kt == #N140_Kernzone);
     MANDATORY CONSTRAINT 
-      (Typ_Kt == #N140_Kernzone) AND ((Code_kommunal == "1401") OR ((Code_kommunal == "1402")))
+      (
+        (Typ_Kt == #N110_Wohnzone_1_G) AND ((Code_kommunal >= 1101) AND (Code_kommunal <= 1109))
+      )
+      OR 
+      (
+        (Typ_Kt == #N111_Wohnzone_2_G) AND ((Code_kommunal >= 1111) AND (Code_kommunal <= 1119))
+      )
+      OR 
+      (
+        (Typ_Kt == #N140_Kernzone) 
+        AND 
+        (
+          (Code_kommunal == "1401") 
+          OR 
+          (Code_kommunal == "1402") 
+          OR 
+          (Code_kommunal == "1403") 
+          OR 
+          (Code_kommunal == "1404") 
+          OR 
+          (Code_kommunal == "1405") 
+          OR 
+          (Code_kommunal == "1406") 
+          OR 
+          (Code_kommunal == "1407") 
+          OR 
+          (Code_kommunal == "1408") 
+          OR 
+          (Code_kommunal == "1409")
+        )
+      )
       OR
       (Typ_Kt == #N210_Landwirtschaftszone);    
     END Typ_Grundnutzung;
