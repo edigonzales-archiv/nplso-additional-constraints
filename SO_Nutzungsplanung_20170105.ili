@@ -12,10 +12,10 @@ INTERLIS 2.3;
 !!  Erfassungsmodell;
 !!  Compiler-Version = "4.6.1-20170109"; 
 !!------------------------------------------------------------------------------ 
-!! Version    | wer | ï¿½nderung 
+!! Version    | wer | Änderung 
 !!------------------------------------------------------------------------------ 
-!! 2015-05-13 | SK  | Modell (v26) fï¿½r Pilot durch Stefan Keller (SK) erstellt 
-!! 2016-11-11 | SK  | ï¿½berarbeitung auf Version 32 (dm_npl_ktso_v32_LV95_ili2.ili)
+!! 2015-05-13 | SK  | Modell (v26) für Pilot durch Stefan Keller (SK) erstellt 
+!! 2016-11-11 | SK  | Überarbeitung auf Version 32 (dm_npl_ktso_v32_LV95_ili2.ili)
 !! 2016-11-29 | OJ  | Tech. Review und Finalisierung durch Oliver Jeker (AGI)
 !! 2017-01-05 | OJ  | Korrektur Beziehungsrollennamen = Klassennamen
 !!============================================================================== 
@@ -252,43 +252,6 @@ VERSION "2017-01-05"  =
       );
       Geschosszahl : 0 .. 50;
     UNIQUE Code_kommunal;
-    !!@ ilivalid.msg = "Mapping 'Code_kommunal' -> 'Typ_Kt' ist falsch: '{Code_kommunal}' -> '{Typ_Kt}'"
-    !!MANDATORY CONSTRAINT (Typ_Kt == #N111_Wohnzone_2_G) OR (Typ_Kt == #N140_Kernzone);
-    !!MANDATORY CONSTRAINT (Nutzungsziffer_Art == #Geschossflaechen) OR NOT (Typ_Kt == #N140_Kernzone);
-    MANDATORY CONSTRAINT 
-      (
-        (Typ_Kt == #N110_Wohnzone_1_G) AND ((Code_kommunal >= 1101) AND (Code_kommunal <= 1109))
-      )
-      OR 
-      (
-        (Typ_Kt == #N111_Wohnzone_2_G) AND ((Code_kommunal >= 1111) AND (Code_kommunal <= 1119))
-      )
-      OR 
-      (
-        (Typ_Kt == #N140_Kernzone) 
-        AND 
-        (
-          (Code_kommunal == "1401") 
-          OR 
-          (Code_kommunal == "1402") 
-          OR 
-          (Code_kommunal == "1403") 
-          OR 
-          (Code_kommunal == "1404") 
-          OR 
-          (Code_kommunal == "1405") 
-          OR 
-          (Code_kommunal == "1406") 
-          OR 
-          (Code_kommunal == "1407") 
-          OR 
-          (Code_kommunal == "1408") 
-          OR 
-          (Code_kommunal == "1409")
-        )
-      )
-      OR
-      (Typ_Kt == #N210_Landwirtschaftszone);    
     END Typ_Grundnutzung;
 
     ASSOCIATION Typ_Grundnutzung_Dokument =
@@ -642,7 +605,7 @@ VERSION "2017-01-05"  =
       );
         
     CLASS VS_Perimeter_Verfahrensstand =
-      Geometrie : MANDATORY Einzelflaeche;  !! In einem Gebiet kï¿½nnen mehrere Verfahren laufen.
+      Geometrie : MANDATORY Einzelflaeche;  !! In einem Gebiet können mehrere Verfahren laufen.
       Planungsart: MANDATORY Planungsart;
       Verfahrensstufe : MANDATORY Verfahrensstufe; 
       Name_Nummer: TEXT*20;

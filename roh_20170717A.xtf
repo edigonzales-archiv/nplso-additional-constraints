@@ -126,7 +126,7 @@
         <Code_kommunal>4200</Code_kommunal>
       </SO_Nutzungsplanung_20170105.Nutzungsplanung.Typ_Grundnutzung>
       <SO_Nutzungsplanung_20170105.Nutzungsplanung.Typ_Grundnutzung TID="0e9fdab6-756d-45be-99ec-747a66fc6145">
-        <Bezeichnung>Wald</Bezeichnung>
+        <Bezeichnung>Wäldchen fubar</Bezeichnung>
         <Verbindlichkeit>orientierend</Verbindlichkeit>
         <Typ_Kt>N440_Wald</Typ_Kt>
         <Code_kommunal>4400</Code_kommunal>
