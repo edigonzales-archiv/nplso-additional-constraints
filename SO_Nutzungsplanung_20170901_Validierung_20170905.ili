@@ -1,7 +1,7 @@
 INTERLIS 2.3;
 
 !!============================================================================== 
-!!@ File = "SO_Nutzungsplanung_20170105_Validierung_20170826.ili"; 
+!!@ File = "SO_Nutzungsplanung_20170901_Validierung_20170905.ili"; 
 !!@ Title = "Nutzungsplanungsvalidierung"; 
 !!@ shortDescription = "Validierungsmodell für Nutzungsplanungsmodell des 
 !!@ Kantons Solothurn.";
@@ -13,7 +13,7 @@ INTERLIS 2.3;
 !!------------------------------------------------------------------------------ 
 !! Version    | wer | Änderung 
 !!------------------------------------------------------------------------------ 
-!! 2017-08-26 | SZ  | Initialversion 
+!! 2017-09-05 | SZ  | Initialversion 
 !!============================================================================== 
 
 CONTRACTED MODEL SO_Nutzungsplanung_20170901_Validierung_20170905 (de)
