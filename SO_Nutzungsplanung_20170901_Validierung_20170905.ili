@@ -27,15 +27,18 @@ VERSION "2017-09-05"  =
     	PROJECTION OF SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Grundnutzung;
     =
       ALL OF Typ_Grundnutzung;
-    !!@ name = Vergleich_mit_Objektkatalog_Grundnutzung
-    !!@ ilivalid.msg = "Fehler im Vergleich zu Objektkatalog (Mapping, Bezeichnung oder Verbindlichkeit falsch): '{Typ_Kt}' <- '{Code_kommunal}' - '{Bezeichnung}' - '{Verbindlichkeit}'"
+    !!@ ilivalid.msg = "Kommunaler Code ist nicht im Wertebereich gemäss Objektkatalog: '{Typ_Kt}' - '{Code_kommunal}'"
     MANDATORY CONSTRAINT 
       (
-        (Typ_Kt == #N110_Wohnzone_1_G) AND ((Code_kommunal >= 1101) AND (Code_kommunal <= 1109)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N110_Wohnzone_1_G) 
+        AND 
+        ((Code_kommunal == "1101") OR (Code_kommunal == "1102") OR (Code_kommunal == "1103") OR (Code_kommunal == "1104") OR (Code_kommunal == "1105") OR (Code_kommunal == "1106") OR (Code_kommunal == "1107") OR (Code_kommunal == "1108") OR (Code_kommunal == "1109")) 
       )
       OR 
       (
-        (Typ_Kt == #N111_Wohnzone_2_G) AND ((Code_kommunal >= 1111) AND (Code_kommunal <= 1119)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N111_Wohnzone_2_G) 
+        AND 
+        ((Code_kommunal == "1111") OR (Code_kommunal == "1112") OR (Code_kommunal == "1113") OR (Code_kommunal == "1114") OR (Code_kommunal == "1115") OR (Code_kommunal == "1116") OR (Code_kommunal == "1117") OR (Code_kommunal == "1118") OR (Code_kommunal == "1119"))
       )
       OR
       (
