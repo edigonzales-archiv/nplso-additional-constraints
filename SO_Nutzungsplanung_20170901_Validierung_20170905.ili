@@ -1,0 +1,274 @@
+INTERLIS 2.3;
+
+!!============================================================================== 
+!!@ File = "SO_Nutzungsplanung_20170105_Validierung_20170826.ili"; 
+!!@ Title = "Nutzungsplanungsvalidierung"; 
+!!@ shortDescription = "Validierungsmodell für Nutzungsplanungsmodell des 
+!!@ Kantons Solothurn.";
+!!@ Issuer = "http://arp.so.ch"; 
+!!@ technicalContact = "http://agi.so.ch"; 
+!!@ furtherInformation = "...";
+!!  Validierungsmodell;
+!!  Compiler-Version = "4.7.3-20170524"; 
+!!------------------------------------------------------------------------------ 
+!! Version    | wer | Änderung 
+!!------------------------------------------------------------------------------ 
+!! 2017-08-26 | SZ  | Initialversion 
+!!============================================================================== 
+
+CONTRACTED MODEL SO_Nutzungsplanung_20170901_Validierung_20170905 (de)
+AT "http://www.geo.so.ch"
+VERSION "2017-09-05"  =
+  IMPORTS SO_Nutzungsplanung_20170901;
+
+  VIEW TOPIC Nutzungsplanung_Validierung =
+  DEPENDS ON SO_Nutzungsplanung_20170901.Nutzungsplanung;
+    VIEW v_Typ_Grundnutzung
+    	PROJECTION OF SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Grundnutzung;
+    =
+      ALL OF Typ_Grundnutzung;
+    !!@ name = Vergleich_mit_Objektkatalog_Grundnutzung
+    !!@ ilivalid.msg = "Fehler im Vergleich zu Objektkatalog (Mapping, Bezeichnung oder Verbindlichkeit falsch): '{Typ_Kt}' <- '{Code_kommunal}' - '{Bezeichnung}' - '{Verbindlichkeit}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #N110_Wohnzone_1_G) AND ((Code_kommunal >= 1101) AND (Code_kommunal <= 1109)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR 
+      (
+        (Typ_Kt == #N111_Wohnzone_2_G) AND ((Code_kommunal >= 1111) AND (Code_kommunal <= 1119)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N112_Wohnzone_3_G) AND ((Code_kommunal >= 1121) AND (Code_kommunal <= 1129)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR 
+      (
+        (Typ_Kt == #N113_Wohnzone_4_G) AND ((Code_kommunal >= 1131) AND (Code_kommunal <= 1139)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR     
+      (
+        (Typ_Kt == #N114_Wohnzone_5_G) AND ((Code_kommunal >= 1141) AND (Code_kommunal <= 1149)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N115_Wohnzone_6_G) AND ((Code_kommunal >= 1151) AND (Code_kommunal <= 1159)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N116_Wohnzone_7_G_und_groesser) AND ((Code_kommunal >= 1161) AND (Code_kommunal <= 1169)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N117_Zone_fuer_Terrassenhaeuser_Terrassensiedlung) AND ((Code_kommunal >= 1171) AND (Code_kommunal <= 1179)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N120_Gewerbezone_ohne_Wohnen) AND ((Code_kommunal >= 1201) AND (Code_kommunal <= 1209)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N121_Industriezone) AND ((Code_kommunal >= 1201) AND (Code_kommunal <= 1219)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N122_Arbeitszone) AND ((Code_kommunal >= 1201) AND (Code_kommunal <= 1219)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N130_Gewerbezone_mit_Wohnen_Mischzone) AND ((Code_kommunal >= 1301) AND (Code_kommunal <= 1309)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR 
+      (
+        (Typ_Kt == #N131_Gewerbezone_mit_Wohnen_Mischzone_2_G) AND ((Code_kommunal >= 1311) AND (Code_kommunal <= 1319)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N132_Gewerbezone_mit_Wohnen_Mischzone_3_G) AND ((Code_kommunal >= 1321) AND (Code_kommunal <= 1329)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR 
+      (
+        (Typ_Kt == #N133_Gewerbezone_mit_Wohnen_Mischzone_4_G_und_groesser) AND ((Code_kommunal >= 1331) AND (Code_kommunal <= 1339)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR     
+      (
+        (Typ_Kt == #N140_Kernzone) 
+        AND 
+        (
+          (Code_kommunal == "1401") 
+          OR 
+          (Code_kommunal == "1402") 
+          OR 
+          (Code_kommunal == "1403") 
+          OR 
+          (Code_kommunal == "1404") 
+          OR 
+          (Code_kommunal == "1405") 
+          OR 
+          (Code_kommunal == "1406") 
+          OR 
+          (Code_kommunal == "1407") 
+          OR 
+          (Code_kommunal == "1408") 
+          OR 
+          (Code_kommunal == "1409")
+        )
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )      
+      OR
+      (
+        (Typ_Kt == #N141_Zentrumszone) AND ((Code_kommunal >= 1411) AND (Code_kommunal <= 1419)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N142_Erhaltungszone) AND ((Code_kommunal >= 1421) AND (Code_kommunal <= 1429)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N150_Zone_fuer_oeffentliche_Bauten) AND ((Code_kommunal >= 1501) AND (Code_kommunal <= 1509)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR 
+      (
+        (Typ_Kt == #N151_Zone_fuer_oeffentliche_Anlagen) AND ((Code_kommunal >= 1511) AND (Code_kommunal <= 1519)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N160_Gruen_und_Freihaltezone_innerhalb_Bauzone) AND ((Code_kommunal >= 1601) AND (Code_kommunal <= 1609)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR 
+      (
+        (Typ_Kt == #N161_kommunale_Uferschutzzone_innerhalb_Bauzone) AND ((Code_kommunal >= 1611) AND (Code_kommunal <= 1619)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N162_Landwirtschaftliche_Kernzone) AND (Code_kommunal >= 1620) AND (Verbindlichkeit == #Nutzungsplanfestlegung) AND (Bezeichnung == "Landwirtschaftliche Kernzone")
+      )
+      OR 
+      (
+        (Typ_Kt == #N163_Weilerzone) AND ((Code_kommunal >= 1631) AND (Code_kommunal <= 1639)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR     
+      (
+        (Typ_Kt == #N169_weitere_eingeschraenkte_Bauzonen) AND ((Code_kommunal >= 1691) AND (Code_kommunal <= 1699)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N170_Zone_fuer_Freizeit_und_Erholung) AND ((Code_kommunal >= 1701) AND (Code_kommunal <= 1709)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N180_Verkehrszone_Strasse) AND (Code_kommunal >= 1800) AND (Bezeichnung == "Verkehrszone Strasse") AND (Verbindlichkeit == #orientierend)
+      )
+      OR 
+      (
+        (Typ_Kt == #N181_Verkehrszone_Bahnareal) AND (Code_kommunal >= 1810) AND (Bezeichnung == "Verkehrszone Bahnareal") AND (Verbindlichkeit == #orientierend)
+      )
+      OR
+      (
+        (Typ_Kt == #N182_Verkehrszone_Flugplatzareal) AND (Code_kommunal >= 1820) AND (Bezeichnung == "Verkehrszone Flugplatzareal") AND (Verbindlichkeit == #orientierend)
+      )
+      OR     
+      (
+        (Typ_Kt == #N189_weitere_Verkehrszonen) AND ((Code_kommunal >= 1891) AND (Code_kommunal <= 1899)) AND (Verbindlichkeit == #orientierend)
+      )
+      OR
+      (
+        (Typ_Kt == #N190_Spezialzone) AND ((Code_kommunal >= 1901) AND (Code_kommunal <= 1909)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N210_Landwirtschaftszone) AND (Code_kommunal >= 2100) AND (Bezeichnung == "Landwirtschaftszone") AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N220_Spezielle_Landwirtschaftszone) AND ((Code_kommunal >= 2201) AND (Code_kommunal <= 2209)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N230_Rebbauzone) AND ((Code_kommunal >= 2301) AND (Code_kommunal <= 2309)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N290_weitere_Landwirtschaftszonen) AND ((Code_kommunal >= 2901) AND (Code_kommunal <= 2909)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N310_kommunale_Naturschutzzone) AND ((Code_kommunal >= 3101) AND (Code_kommunal <= 3109)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR 
+      (
+        (Typ_Kt == #N311_Waldrandschutzzone) AND ((Code_kommunal >= 3111) AND (Code_kommunal <= 3119)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N319_weitere_Schutzzonen_fuer_Lebensraeume_und_Landschaften) AND ((Code_kommunal >= 3191) AND (Code_kommunal <= 3199)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR 
+      (
+        (Typ_Kt == #N320_Gewaesser) AND (Code_kommunal <= 3200) AND (Bezeichnung == "Gewässer") AND (Verbindlichkeit == #orientierend)
+      )
+      OR
+      (
+        (Typ_Kt == #N329_weitere_Zonen_fuer_Gewaesser_und_ihre_Ufer) AND ((Code_kommunal >= 3291) AND (Code_kommunal <= 3299)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N390_weitere_Schutzzonen_ausserhalb_Bauzonen) AND ((Code_kommunal >= 3901) AND (Code_kommunal <= 3909)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )      
+      OR
+      (
+        (Typ_Kt == #N420_Verkehrsflaeche_Strasse) AND (Code_kommunal <= 4200) AND (Bezeichnung == "Verkehrsfläche Strasse") AND (Verbindlichkeit == #orientierend)
+      )
+      OR 
+      (
+        (Typ_Kt == #N421_Verkehrsflaeche_Bahnareal) AND (Code_kommunal <= 4210) AND (Bezeichnung == "Verkehrsfläche Bahnareal") AND (Verbindlichkeit == #orientierend)
+      )
+      OR
+      (
+        (Typ_Kt == #N422_Verkehrsflaeche_Flugplatzareal) AND (Code_kommunal <= 4220) AND (Bezeichnung == "Verkehrsfläche Flugplatzareal") AND (Verbindlichkeit == #orientierend)
+      )
+      OR 
+      (
+        (Typ_Kt == #N429_weitere_Verkehrsflaechen) AND ((Code_kommunal >= 4291) AND (Code_kommunal <= 4299)) AND (Verbindlichkeit == #orientierend)
+      )
+      OR
+      (
+        (Typ_Kt == #N430_Reservezone_Wohnzone_Mischzone_Kernzone_Zentrumszone) AND (Code_kommunal <= 4300) AND (Bezeichnung == "Reservezone Wohn-, Misch-, Kern- und Zentrumszonen") AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR 
+      (
+        (Typ_Kt == #N431_Reservezone_Arbeiten) AND (Code_kommunal <= 4310) AND (Bezeichnung == "Reservezone Arbeiten") AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N432_Reservezone_OeBA) AND (Code_kommunal <= 4320) AND (Bezeichnung == "Reservezone OeBA") AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR 
+      (
+        (Typ_Kt == #N439_Reservezone) AND ((Code_kommunal >= 4391) AND (Code_kommunal <= 4399))
+      )
+      OR
+      (
+        (Typ_Kt == #N440_Wald) AND (Code_kommunal <= 4400) AND (Bezeichnung == "Wald") AND (Verbindlichkeit == #orientierend)
+      )
+      OR
+      (
+        (Typ_Kt == #N490_Golfzone) AND ((Code_kommunal >= 4901) AND (Code_kommunal <= 4909)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR 
+      (
+        (Typ_Kt == #N491_Abbauzone) AND ((Code_kommunal >= 4911) AND (Code_kommunal <= 4919)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR
+      (
+        (Typ_Kt == #N492_Deponiezone) AND ((Code_kommunal >= 4921) AND (Code_kommunal <= 4929)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      )
+      OR 
+      (
+        (Typ_Kt == #N499_weitere_Bauzonen_nach_Art18_RPG_ausserhalb_Bauzonen) AND ((Code_kommunal >= 4991) AND (Code_kommunal <= 4999)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+      );
+
+    END v_Typ_Grundnutzung;
+  END Nutzungsplanung_Validierung;
+  
+END SO_Nutzungsplanung_20170901_Validierung_20170905.
