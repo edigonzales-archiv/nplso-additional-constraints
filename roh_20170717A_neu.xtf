@@ -141,7 +141,7 @@
         <Bezeichnung>Verkehrszone Strasse innerhalb Baugebiet</Bezeichnung>
         <Verbindlichkeit>orientierend</Verbindlichkeit>
         <Typ_Kt>N180_Verkehrszone_Strasse</Typ_Kt>
-        <Code_kommunal>1800</Code_kommunal>
+        <Code_kommunal>1801</Code_kommunal>
       </SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Grundnutzung>
       <SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Grundnutzung TID="83458cd3-7ba4-42b8-8772-2a4cceccd92c">
         <Bezeichnung>Uferschutzzone</Bezeichnung>
@@ -86655,7 +86655,7 @@
         <Abkuerzung>LS</Abkuerzung>
         <Verbindlichkeit>Nutzungsplanfestlegung</Verbindlichkeit>
         <Typ_Kt>N523_Landschaftsschutzzone</Typ_Kt>
-        <Code_kommunal>5231</Code_kommunal>
+        <Code_kommunal>5230</Code_kommunal>
       </SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Ueberlagernd_Flaeche>
       <SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Ueberlagernd_Flaeche TID="848ed739-8c3a-41ab-83cc-40fe46c91e8e">
         <Bezeichnung>Zone Obstgarten</Bezeichnung>
