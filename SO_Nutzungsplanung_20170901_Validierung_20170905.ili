@@ -42,81 +42,92 @@ VERSION "2017-09-05"  =
       )
       OR
       (
-        (Typ_Kt == #N112_Wohnzone_3_G) AND ((Code_kommunal >= 1121) AND (Code_kommunal <= 1129)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N112_Wohnzone_3_G) 
+        AND 
+        ((Code_kommunal == "1121") OR(Code_kommunal == "1122") OR (Code_kommunal == "1123") OR (Code_kommunal == "1124") OR (Code_kommunal == "1125") OR (Code_kommunal == "1126") OR (Code_kommunal == "1127") OR (Code_kommunal == "1128") OR (Code_kommunal == "1129"))
       )
       OR 
       (
-        (Typ_Kt == #N113_Wohnzone_4_G) AND ((Code_kommunal >= 1131) AND (Code_kommunal <= 1139)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N113_Wohnzone_4_G) 
+        AND 
+        ((Code_kommunal == "1131") OR (Code_kommunal == "1132") OR (Code_kommunal == "1133") OR (Code_kommunal == "1134") OR (Code_kommunal == "1135") OR (Code_kommunal == "1136") OR (Code_kommunal == "1137") OR (Code_kommunal == "1138") OR (Code_kommunal == "1139"))
       )
       OR     
       (
-        (Typ_Kt == #N114_Wohnzone_5_G) AND ((Code_kommunal >= 1141) AND (Code_kommunal <= 1149)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N114_Wohnzone_5_G) 
+        AND 
+        ((Code_kommunal == "1141") OR (Code_kommunal == "1142") OR (Code_kommunal == "1143") OR (Code_kommunal == "1144") OR (Code_kommunal == "1145") OR (Code_kommunal == "1146") OR (Code_kommunal == "1147") OR (Code_kommunal == "1148") OR (Code_kommunal == "1149"))
       )
       OR
       (
-        (Typ_Kt == #N115_Wohnzone_6_G) AND ((Code_kommunal >= 1151) AND (Code_kommunal <= 1159)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N115_Wohnzone_6_G) 
+        AND ((Code_kommunal == "1151") OR (Code_kommunal == "1152") OR (Code_kommunal == "1153") OR (Code_kommunal == "1154") OR (Code_kommunal == "1155") OR (Code_kommunal == "1156") OR (Code_kommunal == "1157") OR (Code_kommunal == "1158") OR (Code_kommunal == "1159")) 
       )
       OR
       (
-        (Typ_Kt == #N116_Wohnzone_7_G_und_groesser) AND ((Code_kommunal >= 1161) AND (Code_kommunal <= 1169)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N116_Wohnzone_7_G_und_groesser) 
+        AND 
+        ((Code_kommunal == "1161") OR (Code_kommunal == "1162") OR (Code_kommunal == "1163") OR (Code_kommunal == "1164") OR (Code_kommunal == "1165") OR (Code_kommunal == "1166") OR (Code_kommunal == "1167") OR (Code_kommunal == "1168") OR (Code_kommunal == "1169"))
       )
       OR
       (
-        (Typ_Kt == #N117_Zone_fuer_Terrassenhaeuser_Terrassensiedlung) AND ((Code_kommunal >= 1171) AND (Code_kommunal <= 1179)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N117_Zone_fuer_Terrassenhaeuser_Terrassensiedlung) 
+        AND 
+        ((Code_kommunal == "1171") OR (Code_kommunal == "1172") OR (Code_kommunal == "1173") OR (Code_kommunal == "1174") OR (Code_kommunal == "1175") OR (Code_kommunal == "1176") OR (Code_kommunal == "1177") OR (Code_kommunal == "1178") OR (Code_kommunal == "1179"))
       )
       OR
       (
-        (Typ_Kt == #N120_Gewerbezone_ohne_Wohnen) AND ((Code_kommunal >= 1201) AND (Code_kommunal <= 1209)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N120_Gewerbezone_ohne_Wohnen) 
+        AND 
+        ((Code_kommunal == "1201") OR (Code_kommunal == "1202") OR (Code_kommunal == "1203") OR (Code_kommunal == "1204") OR (Code_kommunal == "1205") OR (Code_kommunal == "1206") OR (Code_kommunal == "1207") OR (Code_kommunal == "1208") OR (Code_kommunal == "1209"))
       )
       OR
       (
-        (Typ_Kt == #N121_Industriezone) AND ((Code_kommunal >= 1201) AND (Code_kommunal <= 1219)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N121_Industriezone) 
+        AND 
+        ((Code_kommunal == "1211") OR (Code_kommunal == "1212") OR (Code_kommunal == "1213") OR (Code_kommunal == "1214") OR (Code_kommunal == "1215") OR (Code_kommunal == "1216") OR (Code_kommunal == "1217") OR (Code_kommunal == "1218") OR (Code_kommunal == "1219"))
       )
       OR
       (
-        (Typ_Kt == #N122_Arbeitszone) AND ((Code_kommunal >= 1201) AND (Code_kommunal <= 1219)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N122_Arbeitszone) 
+        AND 
+        ((Code_kommunal == "1221") OR (Code_kommunal == "1222") OR (Code_kommunal == "1223") OR (Code_kommunal == "1224") OR (Code_kommunal == "1225") OR (Code_kommunal == "1226") OR (Code_kommunal == "1227") OR (Code_kommunal == "1228") OR (Code_kommunal == "1229")) 
       )
       OR
       (
-        (Typ_Kt == #N130_Gewerbezone_mit_Wohnen_Mischzone) AND ((Code_kommunal >= 1301) AND (Code_kommunal <= 1309)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N130_Gewerbezone_mit_Wohnen_Mischzone) 
+        AND 
+        ((Code_kommunal == "1301") OR (Code_kommunal == "1302") OR (Code_kommunal == "1303") OR (Code_kommunal == "1304") OR (Code_kommunal == "1305") OR (Code_kommunal == "1306") OR (Code_kommunal == "1307") OR (Code_kommunal == "1308") OR (Code_kommunal == "1309")) 
       )
       OR 
       (
-        (Typ_Kt == #N131_Gewerbezone_mit_Wohnen_Mischzone_2_G) AND ((Code_kommunal >= 1311) AND (Code_kommunal <= 1319)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N131_Gewerbezone_mit_Wohnen_Mischzone_2_G) 
+        AND 
+        ((Code_kommunal == "1311") OR (Code_kommunal == "1312") OR (Code_kommunal == "1313") OR (Code_kommunal == "1314") OR (Code_kommunal == "1315") OR (Code_kommunal == "1316") OR (Code_kommunal == "1317") OR (Code_kommunal == "1318") OR (Code_kommunal == "1319")) 
       )
       OR
       (
-        (Typ_Kt == #N132_Gewerbezone_mit_Wohnen_Mischzone_3_G) AND ((Code_kommunal >= 1321) AND (Code_kommunal <= 1329)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N132_Gewerbezone_mit_Wohnen_Mischzone_3_G) 
+        AND 
+        ((Code_kommunal == "1321") OR (Code_kommunal == "1322") OR (Code_kommunal == "1323") OR (Code_kommunal == "1324") OR (Code_kommunal == "1325") OR (Code_kommunal == "1326") OR (Code_kommunal == "1327") OR (Code_kommunal == "1328") OR (Code_kommunal == "1329"))  
       )
       OR 
       (
-        (Typ_Kt == #N133_Gewerbezone_mit_Wohnen_Mischzone_4_G_und_groesser) AND ((Code_kommunal >= 1331) AND (Code_kommunal <= 1339)) AND (Verbindlichkeit == #Nutzungsplanfestlegung)
+        (Typ_Kt == #N133_Gewerbezone_mit_Wohnen_Mischzone_4_G_und_groesser) 
+        AND 
+        ((Code_kommunal == "1331") OR (Code_kommunal == "1332") OR (Code_kommunal == "1333") OR (Code_kommunal == "1334") OR (Code_kommunal == "1335") OR (Code_kommunal == "1336") OR (Code_kommunal == "1337") OR (Code_kommunal == "1338") OR (Code_kommunal == "1339"))  
       )
-      OR     
+      OR
+      (
+      	(Typ_Kt == #N134_Zone_fuer_publikumsintensive_Anlagen)
+        AND 
+        ((Code_kommunal == "1341") OR (Code_kommunal == "1342") OR (Code_kommunal == "1343") OR (Code_kommunal == "1344") OR (Code_kommunal == "1345") OR (Code_kommunal == "1346") OR (Code_kommunal == "1347") OR (Code_kommunal == "1348") OR (Code_kommunal == "1349"))  
+      )
+      OR
       (
         (Typ_Kt == #N140_Kernzone) 
         AND 
-        (
-          (Code_kommunal == "1401") 
-          OR 
-          (Code_kommunal == "1402") 
-          OR 
-          (Code_kommunal == "1403") 
-          OR 
-          (Code_kommunal == "1404") 
-          OR 
-          (Code_kommunal == "1405") 
-          OR 
-          (Code_kommunal == "1406") 
-          OR 
-          (Code_kommunal == "1407") 
-          OR 
-          (Code_kommunal == "1408") 
-          OR 
-          (Code_kommunal == "1409")
-        )
-        AND 
-        (Verbindlichkeit == #Nutzungsplanfestlegung)
+        ((Code_kommunal == "1401") OR (Code_kommunal == "1402") OR (Code_kommunal == "1403") OR (Code_kommunal == "1404") OR (Code_kommunal == "1405") OR (Code_kommunal == "1406") OR (Code_kommunal == "1407") OR (Code_kommunal == "1408") OR (Code_kommunal == "1409"))
       )      
       OR
       (
