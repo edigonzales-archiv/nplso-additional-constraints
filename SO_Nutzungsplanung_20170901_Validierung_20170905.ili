@@ -567,7 +567,7 @@ VERSION "2017-09-05"  =
       (
         (Typ_Kt == #N430_Reservezone_Wohnzone_Mischzone_Kernzone_Zentrumszone) 
         AND 
-        (Bezeichnung == "Reservezone Wohn-, Misch-, Kern- und Zentrumszonen")      
+        (Bezeichnung == "Reservezone Wohnzone, Mischzone, Kernzone und Zentrumszone")      
       )
       OR 
       (
