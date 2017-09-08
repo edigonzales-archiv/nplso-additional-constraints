@@ -607,6 +607,338 @@ VERSION "2017-09-05"  =
       (
         (Typ_Kt == #N499_weitere_Bauzonen_nach_Art18_RPG_ausserhalb_Bauzonen) 
       );
+      
+    !!@ ilivalid.msg = "Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: '{Verbindlichkeit}' - '{Code_kommunal}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #N110_Wohnzone_1_G) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N111_Wohnzone_2_G) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N112_Wohnzone_3_G) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N113_Wohnzone_4_G) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR     
+      (
+        (Typ_Kt == #N114_Wohnzone_5_G) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N115_Wohnzone_6_G) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N116_Wohnzone_7_G_und_groesser) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N117_Zone_fuer_Terrassenhaeuser_Terrassensiedlung) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N120_Gewerbezone_ohne_Wohnen) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N121_Industriezone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N122_Arbeitszone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N130_Gewerbezone_mit_Wohnen_Mischzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N131_Gewerbezone_mit_Wohnen_Mischzone_2_G) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N132_Gewerbezone_mit_Wohnen_Mischzone_3_G) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N133_Gewerbezone_mit_Wohnen_Mischzone_4_G_und_groesser) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+      	(Typ_Kt == #N134_Zone_fuer_publikumsintensive_Anlagen)
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N140_Kernzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )      
+      OR
+      (
+        (Typ_Kt == #N141_Zentrumszone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N142_Erhaltungszone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N150_Zone_fuer_oeffentliche_Bauten) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N151_Zone_fuer_oeffentliche_Anlagen) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N160_Gruen_und_Freihaltezone_innerhalb_Bauzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N161_kommunale_Uferschutzzone_innerhalb_Bauzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N162_Landwirtschaftliche_Kernzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N163_Weilerzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR     
+      (
+        (Typ_Kt == #N169_weitere_eingeschraenkte_Bauzonen) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N170_Zone_fuer_Freizeit_und_Erholung) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N180_Verkehrszone_Strasse) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )
+      OR 
+      (
+        (Typ_Kt == #N181_Verkehrszone_Bahnareal) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )
+      OR
+      (
+        (Typ_Kt == #N182_Verkehrszone_Flugplatzareal) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )
+      OR     
+      (
+        (Typ_Kt == #N189_weitere_Verkehrszonen) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )
+      OR
+      (
+        (Typ_Kt == #N190_Spezialzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N210_Landwirtschaftszone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N220_Spezielle_Landwirtschaftszone)
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N230_Rebbauzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N290_weitere_Landwirtschaftszonen) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N310_kommunale_Naturschutzzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N311_Waldrandschutzzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N319_weitere_Schutzzonen_fuer_Lebensraeume_und_Landschaften) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N320_Gewaesser) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N329_weitere_Zonen_fuer_Gewaesser_und_ihre_Ufer) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N390_weitere_Schutzzonen_ausserhalb_Bauzonen) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )      
+      OR
+      (
+        (Typ_Kt == #N420_Verkehrsflaeche_Strasse) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )
+      OR 
+      (
+        (Typ_Kt == #N421_Verkehrsflaeche_Bahnareal) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )
+      OR
+      (
+        (Typ_Kt == #N422_Verkehrsflaeche_Flugplatzareal) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )
+      OR 
+      (
+        (Typ_Kt == #N429_weitere_Verkehrsflaechen) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )
+      OR
+      (
+        (Typ_Kt == #N430_Reservezone_Wohnzone_Mischzone_Kernzone_Zentrumszone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N431_Reservezone_Arbeiten) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N432_Reservezone_OeBA) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N439_Reservezone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N440_Wald) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )
+      OR
+      (
+        (Typ_Kt == #N490_Golfzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N491_Abbauzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N492_Deponiezone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N499_weitere_Bauzonen_nach_Art18_RPG_ausserhalb_Bauzonen) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      );      
     END v_Typ_Grundnutzung;
     
     VIEW v_Typ_Ueberlagernd_Flaeche
@@ -1000,67 +1332,67 @@ VERSION "2017-09-05"  =
       (
         (Typ_Kt == #N610_Perimeter_kantonaler_Nutzungsplan) 
         AND 
-        (Code_kommunal == "Perimeter kantonaler Nutzungsplan")  
+        (Bezeichnung == "Perimeter kantonaler Nutzungsplan")  
       )
       OR
       (
         (Typ_Kt == #N611_Perimeter_kommunaler_Gestaltungsplan) 
         AND 
-        (Code_kommunal == "Perimeter kommunaler Gestaltungsplan")  
+        (Bezeichnung == "Perimeter kommunaler Gestaltungsplan")  
       )  
       OR
       (
         (Typ_Kt == #N620_Perimeter_Gestaltungsplanpflicht) 
         AND 
-        (Code_kommunal == "Perimeter Gestaltungsplanpflicht")  
+        (Bezeichnung == "Perimeter Gestaltungsplanpflicht")  
       )  
       OR
       (
         (Typ_Kt == #N680_Empfindlichkeitsstufe_I) 
         AND 
-        (Code_kommunal == "Empfindlichkeitsstufe I")  
+        (Bezeichnung == "Empfindlichkeitsstufe I")  
       )
       OR
       (
         (Typ_Kt == #N681_Empfindlichkeitsstufe_II) 
         AND 
-        (Code_kommunal == "Empfindlichkeitsstufe II")  
+        (Bezeichnung == "Empfindlichkeitsstufe II")  
       )  
       OR
       (
         (Typ_Kt == #N682_Empfindlichkeitsstufe_II_aufgestuft) 
         AND 
-        (Code_kommunal == "Empfindlichkeitsstufe II aufgestuft")  
+        (Bezeichnung == "Empfindlichkeitsstufe II aufgestuft")  
       )  
       OR
       (
         (Typ_Kt == #N683_Empfindlichkeitsstufe_III) 
         AND 
-        (Code_kommunal == "Empfindlichkeitsstufe III")  
+        (Bezeichnung == "Empfindlichkeitsstufe III")  
       ) 
       OR
       (
         (Typ_Kt == #N684_Empfindlichkeitsstufe_III_aufgestuft) 
         AND 
-        (Code_kommunal == "Empfindlichkeitsstufe III aufgestuft")  
+        (Bezeichnung == "Empfindlichkeitsstufe III aufgestuft")  
       )
       OR
       (
         (Typ_Kt == #N685_Empfindlichkeitsstufe_IV) 
         AND 
-        (Code_kommunal == "Empfindlichkeitsstufe IV")  
+        (Bezeichnung == "Empfindlichkeitsstufe IV")  
       )  
       OR
       (
         (Typ_Kt == #N686_keine_Empfindlichkeitsstufe) 
         AND 
-        (Code_kommunal == "keine Empfindlichkeitsstufe")  
+        (Bezeichnung == "keine Empfindlichkeitsstufe")  
       )  
       OR
       (
         (Typ_Kt == #N690_kantonales_Vorranggebiet_Natur_und_Landschaft) 
         AND 
-        (Code_kommunal == "kantonales Vorranggebiet Natur und Landschaft")  
+        (Bezeichnung == "kantonales Vorranggebiet Natur und Landschaft")  
       )  
       OR
       (
@@ -1078,39 +1410,299 @@ VERSION "2017-09-05"  =
       (
         (Typ_Kt == #N812_geologisches_Objekt) 
         AND 
-        (Code_kommunal == "geologisches Objekt")  
+        (Bezeichnung == "geologisches Objekt")  
       )
       OR
       (
         (Typ_Kt == #N813_Naturobjekt) 
         AND 
-        (Code_kommunal == "Naturobjekt")  
+        (Bezeichnung == "Naturobjekt")  
       )  
       OR
       (
         (Typ_Kt == #N820_kantonal_geschuetztes_Kulturobjekt) 
         AND 
-        (Code_kommunal == "kantonal geschütztes Kulturobjekt")  
+        (Bezeichnung == "kantonal geschütztes Kulturobjekt")  
       )  
       OR
       (
         (Typ_Kt == #N821_kommunal_geschuetztes_Kulturobjekt) 
         AND 
-        (Code_kommunal == "kommunal geschütztes Kulturobjekt")  
+        (Bezeichnung == "kommunal geschütztes Kulturobjekt")  
       ) 
       OR
       (
         (Typ_Kt == #N822_schuetzenswertes_Kulturobjekt) 
         AND 
-        (Code_kommunal == "schützenswertes Kulturobjekt")  
+        (Bezeichnung == "schützenswertes Kulturobjekt")  
       )
       OR
       (
         (Typ_Kt == #N823_erhaltenswertes_Kulturobjekt) 
         AND 
-        (Code_kommunal == "erhaltenswertes Kulturobjekt")  
+        (Bezeichnung == "erhaltenswertes Kulturobjekt")  
       );
-    END v_Typ_Ueberlagernd_Flaeche;  
+      
+    !!@ ilivalid.msg = "Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: '{Verbindlichkeit}' - '{Code_kommunal}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #N510_ueberlagernde_Ortsbildschutzzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR 
+      (
+        (Typ_Kt == #N520_BLN_Gebiet) 
+        AND 
+        (Verbindlichkeit == #hinweisend)        
+      )
+      OR 
+      (
+        (Typ_Kt == #N521_Juraschutzzone) 
+        AND 
+        (Verbindlichkeit == #wegleitend)        
+      )
+      OR
+      (
+        (Typ_Kt == #N522_Naturreservat_inkl_Geotope) 
+        AND 
+        (Verbindlichkeit == #orientierend)      
+      )
+      OR
+      (
+        (Typ_Kt == #N523_Landschaftsschutzzone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N524_Siedlungstrennguertel_von_kommunaler_Bedeutung) 
+        AND 
+        (Verbindlichkeit == #wegleitend)        
+      )   
+      OR
+      (
+        (Typ_Kt == #N525_Siedlungstrennguertel_von_kantonaler_Bedeutung) 
+        AND 
+        (Verbindlichkeit == #wegleitend)        
+      )      
+      OR
+      (
+        (Typ_Kt == #N526_kantonale_Landwirtschafts_und_Schutzzone_Witi) 
+        AND 
+        (Verbindlichkeit == #orientierend)      
+      )         
+      OR
+      (
+        (Typ_Kt == #N527_kantonale_Uferschutzzone) 
+        AND 
+        (Verbindlichkeit == #wegleitend)        
+      )    
+      OR
+      (
+        (Typ_Kt == #N528_kommunale_Uferschutzzone_ausserhalb_Bauzonen) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N529_weitere_Schutzzonen_fuer_Lebensraeume_und_Landschaften) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )    
+      OR
+      (
+        (Typ_Kt == #N530_Naturgefahren_erhebliche_Gefaehrdung) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )         
+      OR
+      (
+        (Typ_Kt == #N531_Naturgefahren_mittlere_Gefaehrdung) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N532_Naturgefahren_geringe_Gefaehrdung) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N533_Naturgefahren_Restgefaehrdung) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N590_Hofstattzone_Freihaltezone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N591_Bauliche_Einschraenkungen) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N592_Hecken_Feldgehoelz_Ufergehoelz) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      ) 
+      OR
+      (
+        (Typ_Kt == #N593_Grundwasserschutzzone_S1) 
+        AND 
+        (Verbindlichkeit == #orientierend)      
+      )
+      OR
+      (
+        (Typ_Kt == #N594_Grundwasserschutzzone_S2) 
+        AND 
+        (Verbindlichkeit == #orientierend)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N595_Grundwasserschutzzone_S3) 
+        AND 
+        (Verbindlichkeit == #orientierend)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N596_Grundwasserschutzareal) 
+        AND 
+        (Verbindlichkeit == #orientierend)      
+      )       
+      OR
+      (
+        (Typ_Kt == #N599_weitere_ueberlagernde_Nutzungszonen) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )   
+      OR
+      (
+        (Typ_Kt == #N610_Perimeter_kantonaler_Nutzungsplan) 
+        AND 
+        (Verbindlichkeit == #orientierend)      
+      )
+      OR
+      (
+        (Typ_Kt == #N611_Perimeter_kommunaler_Gestaltungsplan) 
+        AND 
+        (Verbindlichkeit == #orientierend)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N620_Perimeter_Gestaltungsplanpflicht) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N680_Empfindlichkeitsstufe_I) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N681_Empfindlichkeitsstufe_II) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N682_Empfindlichkeitsstufe_II_aufgestuft) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N683_Empfindlichkeitsstufe_III) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      ) 
+      OR
+      (
+        (Typ_Kt == #N684_Empfindlichkeitsstufe_III_aufgestuft) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N685_Empfindlichkeitsstufe_IV) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N686_keine_Empfindlichkeitsstufe) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N690_kantonales_Vorranggebiet_Natur_und_Landschaft) 
+        AND 
+        (Verbindlichkeit == #orientierend)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N691_kommunales_Vorranggebiet_Natur_und_Landschaft) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )      
+      OR
+      (
+        (Typ_Kt == #N692_Planungszone) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )   
+      OR
+      (
+        (Typ_Kt == #N699_weitere_flaechenbezogene_Festlegungen_NP) 
+        AND 
+        ((Verbindlichkeit == #Nutzungsplanfestlegung) OR (Verbindlichkeit == #orientierend) OR (Verbindlichkeit == #hinweisend)) 
+      )  
+      OR
+      (
+        (Typ_Kt == #N812_geologisches_Objekt) 
+        AND 
+        (Verbindlichkeit == #hinweisend)        
+      )
+      OR
+      (
+        (Typ_Kt == #N813_Naturobjekt) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N820_kantonal_geschuetztes_Kulturobjekt) 
+        AND 
+        (Verbindlichkeit == #orientierend)      
+      )  
+      OR
+      (
+        (Typ_Kt == #N821_kommunal_geschuetztes_Kulturobjekt) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      ) 
+      OR
+      (
+        (Typ_Kt == #N822_schuetzenswertes_Kulturobjekt) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      )
+      OR
+      (
+        (Typ_Kt == #N823_erhaltenswertes_Kulturobjekt) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)      
+      );
+    END v_Typ_Ueberlagernd_Flaeche; 
     
     VIEW v_Typ_Ueberlagernd_Linie
     	PROJECTION OF SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Ueberlagernd_Linie;
@@ -1176,6 +1768,38 @@ VERSION "2017-09-05"  =
       OR   
       (
         (Typ_Kt == #N799_weitere_linienbezogene_Festlegungen_NP) 
+      );
+      
+    !!@ ilivalid.msg = "Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: '{Verbindlichkeit}' - '{Code_kommunal}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #N790_Wanderweg) 
+        AND 
+        (Verbindlichkeit == #hinweisend)  
+      )  
+      OR    
+      (
+        (Typ_Kt == #N791_historischer_Verkehrsweg) 
+        AND 
+        (Verbindlichkeit == #hinweisend)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N792_Waldgrenze) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N793_negative_Waldfeststellung) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )  
+      OR   
+      (
+        (Typ_Kt == #N799_weitere_linienbezogene_Festlegungen_NP) 
+        AND 
+        ((Verbindlichkeit == #Nutzungsplanfestlegung) OR (Verbindlichkeit == #orientierend) OR (Verbindlichkeit == #hinweisend)) 
       );
     END v_Typ_Ueberlagernd_Linie;        
 
@@ -1291,6 +1915,62 @@ VERSION "2017-09-05"  =
       OR 
       (
         (Typ_Kt == #N899_weitere_punktbezogene_Festlegungen_NP) 
+      );
+      
+    !!@ ilivalid.msg = "Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: '{Verbindlichkeit}' - '{Code_kommunal}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #N810_geschuetzter_Einzelbaum) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR    
+      (
+        (Typ_Kt == #N811_erhaltenswerter_Einzelbaum) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N812_geologisches_Objekt) 
+        AND 
+        (Verbindlichkeit == #hinweisend)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N813_Naturobjekt) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N820_kantonal_geschuetztes_Kulturobjekt) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )  
+      OR    
+      (
+        (Typ_Kt == #N821_kommunal_geschuetztes_Kulturobjekt) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N822_schuetzenswertes_Kulturobjekt) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N823_erhaltenswertes_Kulturobjekt) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR 
+      (
+        (Typ_Kt == #N899_weitere_punktbezogene_Festlegungen_NP) 
+        AND 
+        ((Verbindlichkeit == #Nutzungsplanfestlegung) OR (Verbindlichkeit == #orientierend) OR (Verbindlichkeit == #hinweisend)) 
       );
     END v_Typ_Ueberlagernd_Punkt;            
     
@@ -1493,6 +2173,104 @@ VERSION "2017-09-05"  =
       OR       
       (
         (Typ_Kt == #E579_uebrige_Flaechen_Langsamverkehr) 
+      );
+      
+    !!@ ilivalid.msg = "Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: '{Verbindlichkeit}' - '{Code_kommunal}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #E560_Nationalstrasse) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )  
+      OR    
+      (
+        (Typ_Kt == #E561_Kantonsstrasse) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E562_Sammelstrasse_kommunal) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E563_Erschliessungsstrasse_kommunal) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E564_Flurweg_mit_Erschliessungsfunktion) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR    
+      (
+        (Typ_Kt == #E565_Flurweg_ohne_Erschliessungsfunktion) 
+        AND 
+        (Verbindlichkeit == #hinweisend)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E566_private_Erschliessungsstrasse) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E567_unklassierte_Strasse) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR 
+      (
+        (Typ_Kt == #E568_Strassenbankett_Verkehrsinsel) 
+        AND 
+        ((Verbindlichkeit == #Nutzungsplanfestlegung) OR (Verbindlichkeit == #orientierend)) 
+      )  
+      OR       
+      (
+        (Typ_Kt == #E569_uebrige_Verkehrsflaechen) 
+        AND 
+        ((Verbindlichkeit == #Nutzungsplanfestlegung) OR (Verbindlichkeit == #orientierend))
+      )
+      OR
+      (
+        (Typ_Kt == #E570_Gehweg_Trottoir) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR    
+      (
+        (Typ_Kt == #E571_Fussweg) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E572_Radweg) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E573_Fuss_und_Radweg) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E574_Gruenstreifen_Rabatte) 
+        AND 
+        ((Verbindlichkeit == #Nutzungsplanfestlegung) OR (Verbindlichkeit == #orientierend)) 
+      )  
+      OR       
+      (
+        (Typ_Kt == #E579_uebrige_Flaechen_Langsamverkehr) 
+        AND 
+        ((Verbindlichkeit == #Nutzungsplanfestlegung) OR (Verbindlichkeit == #orientierend)) 
       );
     END v_Typ_Erschliessung_Flaechenobjekt;              
   
@@ -1711,6 +2489,116 @@ VERSION "2017-09-05"  =
       (
         (Typ_Kt == #E789_weitere_linienbezogene_Objekte_EP) 
       );
+      
+    !!@ ilivalid.msg = "Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: '{Verbindlichkeit}' - '{Code_kommunal}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #E710_nationale_Baulinie) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )  
+      OR    
+      (
+        (Typ_Kt == #E711_Baulinie_Strasse_kantonal) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E712_Vorbaulinie_kantonal) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E713_Gestaltungsbaulinie_kantonal) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E714_Rueckwaertige_Baulinie_kantonal) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )  
+      OR    
+      (
+        (Typ_Kt == #E715_Baulinie_Infrastruktur_kantonal) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )   
+      OR  
+      (
+        (Typ_Kt == #E719_weitere_nationale_und_kantonale_Baulinien) 
+        AND 
+        (Verbindlichkeit == #orientierend)  
+      )  
+      OR 
+      (
+        (Typ_Kt == #E720_Baulinie_Strasse) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR
+      (
+        (Typ_Kt == #E721_Vorbaulinie) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR    
+      (
+        (Typ_Kt == #E722_Gestaltungsbaulinie) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E723_Rueckwaertige_Baulinie) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E724_Baulinie_Infrastruktur) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E725_Waldabstandslinie) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E726_Baulinie_Hecke) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E727_Baulinie_Gewaesser) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E728_Immissionsstreifen) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )  
+      OR       
+      (
+        (Typ_Kt == #E729_weitere_kommunale_Baulinien) 
+        AND 
+        (Verbindlichkeit == #Nutzungsplanfestlegung)  
+      )
+      OR       
+      (
+        (Typ_Kt == #E789_weitere_linienbezogene_Objekte_EP) 
+        AND 
+        ((Verbindlichkeit == #Nutzungsplanfestlegung) OR (Verbindlichkeit == #orientierend)) 
+      );
     END v_Typ_Erschliessung_Linienobjekt;                  
     
     VIEW v_Typ_Erschliessung_Punktobjekt
@@ -1723,7 +2611,15 @@ VERSION "2017-09-05"  =
         (Typ_Kt == #E889_weitere_punktbezogene_Objekte_EP) 
         AND 
         ((Code_kommunal == "8891") OR (Code_kommunal == "8892") OR (Code_kommunal == "8893") OR (Code_kommunal == "8894") OR (Code_kommunal == "8895") OR (Code_kommunal == "8896") OR (Code_kommunal == "8897") OR (Code_kommunal == "8898") OR (Code_kommunal == "8899")) 
-      );      
+      ); 
+      
+    !!@ ilivalid.msg = "Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: '{Verbindlichkeit}' - '{Code_kommunal}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #E889_weitere_punktbezogene_Objekte_EP) 
+        AND 
+        ((Verbindlichkeit == #Nutzungsplanfestlegung) OR (Verbindlichkeit == #orientierend)) 
+      ); 
     END v_Typ_Erschliessung_Punktobjekt;                  
     
   END Erschliessungsplanung_Validierung;
