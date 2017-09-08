@@ -872,6 +872,244 @@ VERSION "2017-09-05"  =
         AND 
         (Code_kommunal == "8230")  
       );
+      
+    !!@ ilivalid.msg = "Attributwert Bezeichnung ist nicht identisch zum Objektkatalog: '{Bezeichnung}' - '{Typ_Kt}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #N510_ueberlagernde_Ortsbildschutzzone) 
+      )
+      OR 
+      (
+        (Typ_Kt == #N520_BLN_Gebiet) 
+        AND 
+        (Bezeichnung == "BLN Gebiet")  
+      )
+      OR 
+      (
+        (Typ_Kt == #N521_Juraschutzzone) 
+        AND 
+        (Bezeichnung == "Juraschutzzone")  
+      )
+      OR
+      (
+        (Typ_Kt == #N522_Naturreservat_inkl_Geotope) 
+        AND 
+        (Bezeichnung == "Naturreservat inkl. Geotope")  
+      )
+      OR
+      (
+        (Typ_Kt == #N523_Landschaftsschutzzone) 
+      )
+      OR
+      (
+        (Typ_Kt == #N524_Siedlungstrennguertel_von_kommunaler_Bedeutung) 
+        AND 
+        (Bezeichnung == "Siedlungstrenngürtel von kommunaler Bedeutung")  
+      )   
+      OR
+      (
+        (Typ_Kt == #N525_Siedlungstrennguertel_von_kantonaler_Bedeutung) 
+        AND 
+        (Bezeichnung == "Siedlungstrenngürtel von kantonaler Bedeutung")  
+      )      
+      OR
+      (
+        (Typ_Kt == #N526_kantonale_Landwirtschafts_und_Schutzzone_Witi) 
+        AND 
+        (Bezeichnung == "kantonale Landwirtschafts- und Schutzzone Witi")  
+      )         
+      OR
+      (
+        (Typ_Kt == #N527_kantonale_Uferschutzzone) 
+        AND 
+        (Bezeichnung == "kantonale Uferschutzzone")  
+      )    
+      OR
+      (
+        (Typ_Kt == #N528_kommunale_Uferschutzzone_ausserhalb_Bauzonen) 
+      )
+      OR
+      (
+        (Typ_Kt == #N529_weitere_Schutzzonen_fuer_Lebensraeume_und_Landschaften) 
+      )    
+      OR
+      (
+        (Typ_Kt == #N530_Naturgefahren_erhebliche_Gefaehrdung) 
+        AND 
+        (Bezeichnung == "erhebliche Gefährdung, synoptisch")  
+      )         
+      OR
+      (
+        (Typ_Kt == #N531_Naturgefahren_mittlere_Gefaehrdung) 
+        AND 
+        (Bezeichnung == "mittlere Gefährdung, synoptisch")  
+      )
+      OR
+      (
+        (Typ_Kt == #N532_Naturgefahren_geringe_Gefaehrdung) 
+        AND 
+        (Bezeichnung == "geringe Gefährdung, synoptisch")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N533_Naturgefahren_Restgefaehrdung) 
+        AND 
+        (Bezeichnung == "Restgefährdung, synoptisch")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N590_Hofstattzone_Freihaltezone) 
+      )  
+      OR
+      (
+        (Typ_Kt == #N591_Bauliche_Einschraenkungen) 
+      )  
+      OR
+      (
+        (Typ_Kt == #N592_Hecken_Feldgehoelz_Ufergehoelz) 
+      ) 
+      OR
+      (
+        (Typ_Kt == #N593_Grundwasserschutzzone_S1) 
+        AND 
+        (Bezeichnung == "Grundwasserschutzzone S1")  
+      )
+      OR
+      (
+        (Typ_Kt == #N594_Grundwasserschutzzone_S2) 
+        AND 
+        (Bezeichnung == "Grundwasserschutzzone S2")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N595_Grundwasserschutzzone_S3) 
+        AND 
+        (Bezeichnung == "Grundwasserschutzzone S3")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N596_Grundwasserschutzareal) 
+        AND 
+        (Bezeichnung == "Grundwasserschutzareal")  
+      )       
+      OR
+      (
+        (Typ_Kt == #N599_weitere_ueberlagernde_Nutzungszonen) 
+      )   
+      OR
+      (
+        (Typ_Kt == #N610_Perimeter_kantonaler_Nutzungsplan) 
+        AND 
+        (Code_kommunal == "Perimeter kantonaler Nutzungsplan")  
+      )
+      OR
+      (
+        (Typ_Kt == #N611_Perimeter_kommunaler_Gestaltungsplan) 
+        AND 
+        (Code_kommunal == "Perimeter kommunaler Gestaltungsplan")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N620_Perimeter_Gestaltungsplanpflicht) 
+        AND 
+        (Code_kommunal == "Perimeter Gestaltungsplanpflicht")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N680_Empfindlichkeitsstufe_I) 
+        AND 
+        (Code_kommunal == "Empfindlichkeitsstufe I")  
+      )
+      OR
+      (
+        (Typ_Kt == #N681_Empfindlichkeitsstufe_II) 
+        AND 
+        (Code_kommunal == "Empfindlichkeitsstufe II")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N682_Empfindlichkeitsstufe_II_aufgestuft) 
+        AND 
+        (Code_kommunal == "Empfindlichkeitsstufe II aufgestuft")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N683_Empfindlichkeitsstufe_III) 
+        AND 
+        (Code_kommunal == "Empfindlichkeitsstufe III")  
+      ) 
+      OR
+      (
+        (Typ_Kt == #N684_Empfindlichkeitsstufe_III_aufgestuft) 
+        AND 
+        (Code_kommunal == "Empfindlichkeitsstufe III aufgestuft")  
+      )
+      OR
+      (
+        (Typ_Kt == #N685_Empfindlichkeitsstufe_IV) 
+        AND 
+        (Code_kommunal == "Empfindlichkeitsstufe IV")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N686_keine_Empfindlichkeitsstufe) 
+        AND 
+        (Code_kommunal == "keine Empfindlichkeitsstufe")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N690_kantonales_Vorranggebiet_Natur_und_Landschaft) 
+        AND 
+        (Code_kommunal == "kantonales Vorranggebiet Natur und Landschaft")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N691_kommunales_Vorranggebiet_Natur_und_Landschaft) 
+      )      
+      OR
+      (
+        (Typ_Kt == #N692_Planungszone) 
+      )   
+      OR
+      (
+        (Typ_Kt == #N699_weitere_flaechenbezogene_Festlegungen_NP) 
+      )  
+      OR
+      (
+        (Typ_Kt == #N812_geologisches_Objekt) 
+        AND 
+        (Code_kommunal == "geologisches Objekt")  
+      )
+      OR
+      (
+        (Typ_Kt == #N813_Naturobjekt) 
+        AND 
+        (Code_kommunal == "Naturobjekt")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N820_kantonal_geschuetztes_Kulturobjekt) 
+        AND 
+        (Code_kommunal == "kantonal geschütztes Kulturobjekt")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N821_kommunal_geschuetztes_Kulturobjekt) 
+        AND 
+        (Code_kommunal == "kommunal geschütztes Kulturobjekt")  
+      ) 
+      OR
+      (
+        (Typ_Kt == #N822_schuetzenswertes_Kulturobjekt) 
+        AND 
+        (Code_kommunal == "schützenswertes Kulturobjekt")  
+      )
+      OR
+      (
+        (Typ_Kt == #N823_erhaltenswertes_Kulturobjekt) 
+        AND 
+        (Code_kommunal == "erhaltenswertes Kulturobjekt")  
+      );
     END v_Typ_Ueberlagernd_Flaeche;  
     
     VIEW v_Typ_Ueberlagernd_Linie
@@ -908,6 +1146,36 @@ VERSION "2017-09-05"  =
         (Typ_Kt == #N799_weitere_linienbezogene_Festlegungen_NP) 
         AND 
         ((Code_kommunal == "7991") OR (Code_kommunal == "7992") OR (Code_kommunal == "7993") OR (Code_kommunal == "7994") OR (Code_kommunal == "7995") OR (Code_kommunal == "7996") OR (Code_kommunal == "7997") OR (Code_kommunal == "7998") OR (Code_kommunal == "7999")) 
+      );
+      
+	!!@ ilivalid.msg = "Attributwert Bezeichnung ist nicht identisch zum Objektkatalog: '{Bezeichnung}' - '{Typ_Kt}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #N790_Wanderweg) 
+        AND 
+        (Bezeichnung == "Wanderweg")  
+      )  
+      OR    
+      (
+        (Typ_Kt == #N791_historischer_Verkehrsweg) 
+        AND 
+        (Bezeichnung == "historischer Verkehrsweg")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N792_Waldgrenze) 
+        AND 
+        (Bezeichnung == "Waldgrenze")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N793_negative_Waldfeststellung) 
+        AND 
+        (Bezeichnung == "negative Waldfeststellung")  
+      )  
+      OR   
+      (
+        (Typ_Kt == #N799_weitere_linienbezogene_Festlegungen_NP) 
       );
     END v_Typ_Ueberlagernd_Linie;        
 
@@ -969,6 +1237,60 @@ VERSION "2017-09-05"  =
         (Typ_Kt == #N899_weitere_punktbezogene_Festlegungen_NP) 
         AND 
         ((Code_kommunal == "8991") OR (Code_kommunal == "8992") OR (Code_kommunal == "8993") OR (Code_kommunal == "8994") OR (Code_kommunal == "8995") OR (Code_kommunal == "8996") OR (Code_kommunal == "8997") OR (Code_kommunal == "8998") OR (Code_kommunal == "8999")) 
+      );
+      
+	!!@ ilivalid.msg = "Attributwert Bezeichnung ist nicht identisch zum Objektkatalog: '{Bezeichnung}' - '{Typ_Kt}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #N810_geschuetzter_Einzelbaum) 
+        AND 
+        (Bezeichnung == "geschützter Einzelbaum")  
+      )  
+      OR    
+      (
+        (Typ_Kt == #N811_erhaltenswerter_Einzelbaum) 
+        AND 
+        (Bezeichnung == "erhaltenswerter Einzelbaum")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N812_geologisches_Objekt) 
+        AND 
+        (Bezeichnung == "geologisches Objekt")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N813_Naturobjekt) 
+        AND 
+        (Bezeichnung == "Naturobjekt")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N820_kantonal_geschuetztes_Kulturobjekt) 
+        AND 
+        (Bezeichnung == "kantonal geschütztes Kulturobjekt")  
+      )  
+      OR    
+      (
+        (Typ_Kt == #N821_kommunal_geschuetztes_Kulturobjekt) 
+        AND 
+        (Bezeichnung == "kommunal geschütztes Kulturobjekt")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N822_schuetzenswertes_Kulturobjekt) 
+        AND 
+        (Bezeichnung == "schützenswertes Kulturobjekt")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N823_erhaltenswertes_Kulturobjekt) 
+        AND 
+        (Bezeichnung == "erhaltenswertes Kulturobjekt")  
+      )  
+      OR 
+      (
+        (Typ_Kt == #N899_weitere_punktbezogene_Festlegungen_NP) 
       );
     END v_Typ_Ueberlagernd_Punkt;            
     
@@ -1077,6 +1399,100 @@ VERSION "2017-09-05"  =
         (Typ_Kt == #E579_uebrige_Flaechen_Langsamverkehr) 
         AND 
         ((Code_kommunal == "5791") OR (Code_kommunal == "5792") OR (Code_kommunal == "5793") OR (Code_kommunal == "5794") OR (Code_kommunal == "5795") OR (Code_kommunal == "5796") OR (Code_kommunal == "5797") OR (Code_kommunal == "5798") OR (Code_kommunal == "5799")) 
+      );
+      
+	!!@ ilivalid.msg = "Attributwert Bezeichnung ist nicht identisch zum Objektkatalog: '{Bezeichnung}' - '{Typ_Kt}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #E560_Nationalstrasse) 
+        AND 
+        (Bezeichnung == "Nationalstrasse")  
+      )  
+      OR    
+      (
+        (Typ_Kt == #E561_Kantonsstrasse) 
+        AND 
+        (Bezeichnung == "Kantonsstrasse")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E562_Sammelstrasse_kommunal) 
+        AND 
+        (Bezeichnung == "Sammelstrasse kommunal")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E563_Erschliessungsstrasse_kommunal) 
+        AND 
+        (Bezeichnung == "Erschliessungsstrasse kommunal")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E564_Flurweg_mit_Erschliessungsfunktion) 
+        AND 
+        (Bezeichnung == "Flurweg mit Erschliessungsfunktion")  
+      )  
+      OR    
+      (
+        (Typ_Kt == #E565_Flurweg_ohne_Erschliessungsfunktion) 
+        AND 
+        (Bezeichnung == "Flurweg ohne Erschliessungsfunktion")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E566_private_Erschliessungsstrasse) 
+        AND 
+        (Bezeichnung == "private Erschliessungsstrasse")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E567_unklassierte_Strasse) 
+        AND 
+        (Bezeichnung == "unklassierte Strasse")  
+      )  
+      OR 
+      (
+        (Typ_Kt == #E568_Strassenbankett_Verkehrsinsel) 
+        AND 
+        (Bezeichnung == "Strassenbankett, Verkehrsinsel")  
+      )  
+      OR       
+      (
+        (Typ_Kt == #E569_uebrige_Verkehrsflaechen) 
+      )
+      OR
+      (
+        (Typ_Kt == #E570_Gehweg_Trottoir) 
+        AND 
+        (Bezeichnung == "Gehweg, Trottoir")  
+      )  
+      OR    
+      (
+        (Typ_Kt == #E571_Fussweg) 
+        AND 
+        (Bezeichnung == "Fussweg")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E572_Radweg) 
+        AND 
+        (Bezeichnung == "Radweg")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E573_Fuss_und_Radweg) 
+        AND 
+        (Bezeichnung == "Fuss- und Radweg")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E574_Gruenstreifen_Rabatte) 
+        AND 
+        (Bezeichnung == "Grünstreifen, Rabatte")  
+      )  
+      OR       
+      (
+        (Typ_Kt == #E579_uebrige_Flaechen_Langsamverkehr) 
       );
     END v_Typ_Erschliessung_Flaechenobjekt;              
   
@@ -1193,6 +1609,108 @@ VERSION "2017-09-05"  =
         AND 
         ((Code_kommunal == "7891") OR (Code_kommunal == "7892") OR (Code_kommunal == "7893") OR (Code_kommunal == "7894") OR (Code_kommunal == "7895") OR (Code_kommunal == "7896") OR (Code_kommunal == "7897") OR (Code_kommunal == "7898") OR (Code_kommunal == "7899")) 
       );
+      
+	!!@ ilivalid.msg = "Attributwert Bezeichnung ist nicht identisch zum Objektkatalog: '{Bezeichnung}' - '{Typ_Kt}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #E710_nationale_Baulinie) 
+      )  
+      OR    
+      (
+        (Typ_Kt == #E711_Baulinie_Strasse_kantonal) 
+        AND 
+        (Bezeichnung == "Baulinie Strasse kantonal")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E712_Vorbaulinie_kantonal) 
+        AND 
+        (Bezeichnung == "Vorbaulinie kantonal")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E713_Gestaltungsbaulinie_kantonal) 
+        AND 
+        (Bezeichnung == "Gestaltungsbaulinie kantonal")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E714_Rueckwaertige_Baulinie_kantonal) 
+        AND 
+        (Bezeichnung == "Rückwärtige Baulinie kantonal")  
+      )  
+      OR    
+      (
+        (Typ_Kt == #E715_Baulinie_Infrastruktur_kantonal) 
+        AND 
+        (Bezeichnung == "Baulinie Infrastruktur kantonal")  
+      )   
+      OR  
+      (
+        (Typ_Kt == #E719_weitere_nationale_und_kantonale_Baulinien) 
+      )  
+      OR 
+      (
+        (Typ_Kt == #E720_Baulinie_Strasse) 
+        AND 
+        (Bezeichnung == "Baulinie Strasse")  
+      )  
+      OR
+      (
+        (Typ_Kt == #E721_Vorbaulinie) 
+        AND 
+        (Bezeichnung == "Vorbaulinie")  
+      )  
+      OR    
+      (
+        (Typ_Kt == #E722_Gestaltungsbaulinie) 
+        AND 
+        (Bezeichnung == "Gestaltungsbaulinie")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E723_Rueckwaertige_Baulinie) 
+        AND 
+        (Bezeichnung == "Rückwärtige Baulinie")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E724_Baulinie_Infrastruktur) 
+        AND 
+        (Bezeichnung == "Baulinie Infrastruktur ")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E725_Waldabstandslinie) 
+        AND 
+        (Bezeichnung == "Waldabstandslinie")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E726_Baulinie_Hecke) 
+        AND 
+        (Bezeichnung == "Baulinie Hecke")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E727_Baulinie_Gewaesser) 
+        AND 
+        (Bezeichnung == "Baulinie Gewässer")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #E728_Immissionsstreifen) 
+        AND 
+        (Bezeichnung == "Immissionsstreifen")  
+      )  
+      OR       
+      (
+        (Typ_Kt == #E729_weitere_kommunale_Baulinien) 
+      )
+      OR       
+      (
+        (Typ_Kt == #E789_weitere_linienbezogene_Objekte_EP) 
+      );
     END v_Typ_Erschliessung_Linienobjekt;                  
     
     VIEW v_Typ_Erschliessung_Punktobjekt
@@ -1205,7 +1723,7 @@ VERSION "2017-09-05"  =
         (Typ_Kt == #E889_weitere_punktbezogene_Objekte_EP) 
         AND 
         ((Code_kommunal == "8891") OR (Code_kommunal == "8892") OR (Code_kommunal == "8893") OR (Code_kommunal == "8894") OR (Code_kommunal == "8895") OR (Code_kommunal == "8896") OR (Code_kommunal == "8897") OR (Code_kommunal == "8898") OR (Code_kommunal == "8899")) 
-      );
+      );      
     END v_Typ_Erschliessung_Punktobjekt;                  
     
   END Erschliessungsplanung_Validierung;
