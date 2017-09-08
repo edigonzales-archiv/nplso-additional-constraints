@@ -23,6 +23,7 @@ VERSION "2017-09-05"  =
 
   VIEW TOPIC Nutzungsplanung_Validierung =
   DEPENDS ON SO_Nutzungsplanung_20170901.Nutzungsplanung;
+  
     VIEW v_Typ_Grundnutzung
     	PROJECTION OF SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Grundnutzung;
     =
@@ -622,7 +623,106 @@ VERSION "2017-09-05"  =
         AND 
         (Code_kommunal == "8230")  
       );
-    END v_Typ_Ueberlagernd_Flaeche;    
+    END v_Typ_Ueberlagernd_Flaeche;  
+    
+    VIEW v_Typ_Ueberlagernd_Linie
+    	PROJECTION OF SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Ueberlagernd_Linie;
+    =
+      ALL OF Typ_Ueberlagernd_Linie;
+    !!@ ilivalid.msg = "Kommunaler Code ist nicht im Wertebereich gemäss Objektkatalog: '{Typ_Kt}' - '{Code_kommunal}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #N790_Wanderweg) 
+        AND 
+        (Code_kommunal == "7900")  
+      )  
+      OR    
+      (
+        (Typ_Kt == #N791_historischer_Verkehrsweg) 
+        AND 
+        (Code_kommunal == "7910")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N792_Waldgrenze) 
+        AND 
+        (Code_kommunal == "7920")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N793_negative_Waldfeststellung) 
+        AND 
+        (Code_kommunal == "7930")  
+      )  
+      OR   
+      (
+        (Typ_Kt == #N799_weitere_linienbezogene_Festlegungen_NP) 
+        AND 
+        ((Code_kommunal == "7991") OR (Code_kommunal == "7992") OR (Code_kommunal == "7993") OR (Code_kommunal == "7994") OR (Code_kommunal == "7995") OR (Code_kommunal == "7996") OR (Code_kommunal == "7997") OR (Code_kommunal == "7998") OR (Code_kommunal == "7999")) 
+      );
+    END v_Typ_Ueberlagernd_Linie;        
+
+    VIEW v_Typ_Ueberlagernd_Punkt
+    	PROJECTION OF SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Ueberlagernd_Punkt;
+    =
+      ALL OF Typ_Ueberlagernd_Punkt;
+    !!@ ilivalid.msg = "Kommunaler Code ist nicht im Wertebereich gemäss Objektkatalog: '{Typ_Kt}' - '{Code_kommunal}'"
+    MANDATORY CONSTRAINT 
+      (
+        (Typ_Kt == #N810_geschuetzter_Einzelbaum) 
+        AND 
+        (Code_kommunal == "8100")  
+      )  
+      OR    
+      (
+        (Typ_Kt == #N811_erhaltenswerter_Einzelbaum) 
+        AND 
+        (Code_kommunal == "8110")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N812_geologisches_Objekt) 
+        AND 
+        (Code_kommunal == "8120")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N813_Naturobjekt) 
+        AND 
+        (Code_kommunal == "8130")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N820_kantonal_geschuetztes_Kulturobjekt) 
+        AND 
+        (Code_kommunal == "8200")  
+      )  
+      OR    
+      (
+        (Typ_Kt == #N821_kommunal_geschuetztes_Kulturobjekt) 
+        AND 
+        (Code_kommunal == "8210")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N822_schuetzenswertes_Kulturobjekt) 
+        AND 
+        (Code_kommunal == "8220")  
+      )  
+      OR  
+      (
+        (Typ_Kt == #N823_erhaltenswertes_Kulturobjekt) 
+        AND 
+        (Code_kommunal == "8230")  
+      )  
+      OR 
+      (
+        (Typ_Kt == #N899_weitere_punktbezogene_Festlegungen_NP) 
+        AND 
+        ((Code_kommunal == "8991") OR (Code_kommunal == "8992") OR (Code_kommunal == "8993") OR (Code_kommunal == "8994") OR (Code_kommunal == "8995") OR (Code_kommunal == "8996") OR (Code_kommunal == "8997") OR (Code_kommunal == "8998") OR (Code_kommunal == "8999")) 
+      );
+    END v_Typ_Ueberlagernd_Punkt;            
+    
   END Nutzungsplanung_Validierung;
   
 END SO_Nutzungsplanung_20170901_Validierung_20170905.
