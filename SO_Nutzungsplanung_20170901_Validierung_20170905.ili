@@ -28,6 +28,12 @@ VERSION "2017-09-05"  =
     	PROJECTION OF SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Grundnutzung;
     =
       ALL OF Typ_Grundnutzung;
+    !!@ ilivalid.msg = "Attributwert Nutzungsziffer_Art fehlt bei Typ '{Code_kommunal}'"
+    MANDATORY CONSTRAINT NOT (DEFINED (Nutzungsziffer)) OR (DEFINED (Nutzungsziffer) AND DEFINED (Nutzungsziffer_Art));    
+      
+    !!@ ilivalid.msg = "Attributwert Nutzungsziffer fehlt bei Typ '{Code_kommunal}'"
+    MANDATORY CONSTRAINT NOT (DEFINED (Nutzungsziffer_Art)) OR (DEFINED (Nutzungsziffer) AND DEFINED (Nutzungsziffer_Art));    
+    
     !!@ ilivalid.msg = "Kommunaler Code ist nicht im Wertebereich gemäss Objektkatalog: '{Typ_Kt}' - '{Code_kommunal}'"
     MANDATORY CONSTRAINT 
       (

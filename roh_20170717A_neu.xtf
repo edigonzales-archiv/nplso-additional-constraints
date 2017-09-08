@@ -69,7 +69,6 @@
         <Typ_Kt>N140_Kernzone</Typ_Kt>
         <Code_kommunal>1401</Code_kommunal>
         <Nutzungsziffer>0.40</Nutzungsziffer>
-        <Nutzungsziffer_Art>Ausnuetzungsziffer</Nutzungsziffer_Art>
         <Geschosszahl>2</Geschosszahl>
       </SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Grundnutzung>
       <SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Grundnutzung TID="59bc36ee-9334-465b-8f58-dba64bcdff76">
@@ -85,7 +84,6 @@
         <Verbindlichkeit>Nutzungsplanfestlegung</Verbindlichkeit>
         <Typ_Kt>N111_Wohnzone_2_G</Typ_Kt>
         <Code_kommunal>1111</Code_kommunal>
-        <Nutzungsziffer>0.35</Nutzungsziffer>
         <Nutzungsziffer_Art>Ausnuetzungsziffer</Nutzungsziffer_Art>
         <Geschosszahl>2</Geschosszahl>
       </SO_Nutzungsplanung_20170901.Nutzungsplanung.Typ_Grundnutzung>
