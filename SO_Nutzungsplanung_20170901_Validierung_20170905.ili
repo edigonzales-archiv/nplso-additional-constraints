@@ -392,9 +392,236 @@ VERSION "2017-09-05"  =
       (
         (Typ_Kt == #N523_Landschaftsschutzzone) 
         AND 
-        ((Code_kommunal == "5231") OR (Code_kommunal == "5231") OR (Code_kommunal == "5233") OR (Code_kommunal == "5234") OR (Code_kommunal == "5235") OR (Code_kommunal == "5236") OR (Code_kommunal == "5237") OR (Code_kommunal == "5238") OR (Code_kommunal == "5239")) 
+        ((Code_kommunal == "5231") OR (Code_kommunal == "5232") OR (Code_kommunal == "5233") OR (Code_kommunal == "5234") OR (Code_kommunal == "5235") OR (Code_kommunal == "5236") OR (Code_kommunal == "5237") OR (Code_kommunal == "5238") OR (Code_kommunal == "5239")) 
       )
-      ;
+      OR
+      (
+        (Typ_Kt == #N524_Siedlungstrennguertel_von_kommunaler_Bedeutung) 
+        AND 
+        (Code_kommunal == "5240")  
+      )   
+      OR
+      (
+        (Typ_Kt == #N525_Siedlungstrennguertel_von_kantonaler_Bedeutung) 
+        AND 
+        (Code_kommunal == "5250")  
+      )      
+      OR
+      (
+        (Typ_Kt == #N526_kantonale_Landwirtschafts_und_Schutzzone_Witi) 
+        AND 
+        (Code_kommunal == "5260")  
+      )         
+      OR
+      (
+        (Typ_Kt == #N527_kantonale_Uferschutzzone) 
+        AND 
+        (Code_kommunal == "5270")  
+      )    
+      OR
+      (
+        (Typ_Kt == #N528_kommunale_Uferschutzzone_ausserhalb_Bauzonen) 
+        AND 
+        ((Code_kommunal == "5281") OR (Code_kommunal == "5282") OR (Code_kommunal == "5283") OR (Code_kommunal == "5284") OR (Code_kommunal == "5285") OR (Code_kommunal == "5286") OR (Code_kommunal == "5287") OR (Code_kommunal == "5288") OR (Code_kommunal == "5289")) 
+      )
+      OR
+      (
+        (Typ_Kt == #N529_weitere_Schutzzonen_fuer_Lebensraeume_und_Landschaften) 
+        AND 
+        ((Code_kommunal == "5291") OR (Code_kommunal == "5292") OR (Code_kommunal == "5293") OR (Code_kommunal == "5294") OR (Code_kommunal == "5295") OR (Code_kommunal == "5296") OR (Code_kommunal == "5297") OR (Code_kommunal == "5298") OR (Code_kommunal == "5299")) 
+      )    
+      OR
+      (
+        (Typ_Kt == #N530_Naturgefahren_erhebliche_Gefaehrdung) 
+        AND 
+        (Code_kommunal == "5300")  
+      )         
+      OR
+      (
+        (Typ_Kt == #N531_Naturgefahren_mittlere_Gefaehrdung) 
+        AND 
+        (Code_kommunal == "5310")  
+      )
+      OR
+      (
+        (Typ_Kt == #N532_Naturgefahren_geringe_Gefaehrdung) 
+        AND 
+        (Code_kommunal == "5320")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N533_Naturgefahren_Restgefaehrdung) 
+        AND 
+        (Code_kommunal == "5330")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N590_Hofstattzone_Freihaltezone) 
+        AND 
+        ((Code_kommunal == "5901") OR (Code_kommunal == "5902") OR (Code_kommunal == "5903") OR (Code_kommunal == "5904") OR (Code_kommunal == "5905") OR (Code_kommunal == "5906") OR (Code_kommunal == "5907") OR (Code_kommunal == "5908") OR (Code_kommunal == "5909")) 
+      )  
+      OR
+      (
+        (Typ_Kt == #N591_Bauliche_Einschraenkungen) 
+        AND 
+        ((Code_kommunal == "5911") OR (Code_kommunal == "5912") OR (Code_kommunal == "5913") OR (Code_kommunal == "5914") OR (Code_kommunal == "5915") OR (Code_kommunal == "5916") OR (Code_kommunal == "5917") OR (Code_kommunal == "5918") OR (Code_kommunal == "5919")) 
+      )  
+      OR
+      (
+        (Typ_Kt == #N592_Hecken_Feldgehoelz_Ufergehoelz) 
+        AND 
+        ((Code_kommunal == "5921") OR (Code_kommunal == "5922") OR (Code_kommunal == "5923") OR (Code_kommunal == "5924") OR (Code_kommunal == "5925") OR (Code_kommunal == "5926") OR (Code_kommunal == "5927") OR (Code_kommunal == "5928") OR (Code_kommunal == "5929")) 
+      ) 
+      OR
+      (
+        (Typ_Kt == #N593_Grundwasserschutzzone_S1) 
+        AND 
+        (Code_kommunal == "5930")  
+      )
+      OR
+      (
+        (Typ_Kt == #N594_Grundwasserschutzzone_S2) 
+        AND 
+        (Code_kommunal == "5940")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N595_Grundwasserschutzzone_S3) 
+        AND 
+        (Code_kommunal == "5950")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N596_Grundwasserschutzareal) 
+        AND 
+        (Code_kommunal == "5960")  
+      )       
+      OR
+      (
+        (Typ_Kt == #N599_weitere_ueberlagernde_Nutzungszonen) 
+        AND 
+        ((Code_kommunal == "5991") OR (Code_kommunal == "5992") OR (Code_kommunal == "5993") OR (Code_kommunal == "5994") OR (Code_kommunal == "5995") OR (Code_kommunal == "5996") OR (Code_kommunal == "5997") OR (Code_kommunal == "5998") OR (Code_kommunal == "5999")) 
+      )   
+      OR
+      (
+        (Typ_Kt == #N610_Perimeter_kantonaler_Nutzungsplan) 
+        AND 
+        (Code_kommunal == "6100")  
+      )
+      OR
+      (
+        (Typ_Kt == #N611_Perimeter_kommunaler_Gestaltungsplan) 
+        AND 
+        (Code_kommunal == "6110")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N620_Perimeter_Gestaltungsplanpflicht) 
+        AND 
+        (Code_kommunal == "6200")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N680_Empfindlichkeitsstufe_I) 
+        AND 
+        (Code_kommunal == "6800")  
+      )
+      OR
+      (
+        (Typ_Kt == #N681_Empfindlichkeitsstufe_II) 
+        AND 
+        (Code_kommunal == "6810")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N682_Empfindlichkeitsstufe_II_aufgestuft) 
+        AND 
+        (Code_kommunal == "6820")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N683_Empfindlichkeitsstufe_III) 
+        AND 
+        (Code_kommunal == "6830")  
+      ) 
+      OR
+      (
+        (Typ_Kt == #N684_Empfindlichkeitsstufe_III_aufgestuft) 
+        AND 
+        (Code_kommunal == "6840")  
+      )
+      OR
+      (
+        (Typ_Kt == #N685_Empfindlichkeitsstufe_IV) 
+        AND 
+        (Code_kommunal == "6850")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N686_keine_Empfindlichkeitsstufe) 
+        AND 
+        (Code_kommunal == "6860")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N690_kantonales_Vorranggebiet_Natur_und_Landschaft) 
+        AND 
+        (Code_kommunal == "6900")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N691_kommunales_Vorranggebiet_Natur_und_Landschaft) 
+        AND 
+        ((Code_kommunal == "6911") OR (Code_kommunal == "6912") OR (Code_kommunal == "6913") OR (Code_kommunal == "6914") OR (Code_kommunal == "6915") OR (Code_kommunal == "6916") OR (Code_kommunal == "6917") OR (Code_kommunal == "6918") OR (Code_kommunal == "6919")) 
+      )      
+      OR
+      (
+        (Typ_Kt == #N692_Planungszone) 
+        AND 
+        ((Code_kommunal == "6921") OR (Code_kommunal == "6922") OR (Code_kommunal == "6923") OR (Code_kommunal == "6924") OR (Code_kommunal == "6925") OR (Code_kommunal == "6926") OR (Code_kommunal == "6927") OR (Code_kommunal == "6928") OR (Code_kommunal == "6929")) 
+      )   
+      OR
+      (
+        (Typ_Kt == #N699_weitere_flaechenbezogene_Festlegungen_NP) 
+        AND 
+        ((Code_kommunal == "6991") OR (Code_kommunal == "6992") OR (Code_kommunal == "6993") OR (Code_kommunal == "6994") OR (Code_kommunal == "6995") OR (Code_kommunal == "6916") OR (Code_kommunal == "6997") OR (Code_kommunal == "6998") OR (Code_kommunal == "6999")) 
+      )  
+      OR
+      (
+        (Typ_Kt == #N812_geologisches_Objekt) 
+        AND 
+        (Code_kommunal == "8120")  
+      )
+      OR
+      (
+        (Typ_Kt == #N813_Naturobjekt) 
+        AND 
+        (Code_kommunal == "8130")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N820_kantonal_geschuetztes_Kulturobjekt) 
+        AND 
+        (Code_kommunal == "8200")  
+      )  
+      OR
+      (
+        (Typ_Kt == #N821_kommunal_geschuetztes_Kulturobjekt) 
+        AND 
+        (Code_kommunal == "8210")  
+      ) 
+      OR
+      (
+        (Typ_Kt == #N822_schuetzenswertes_Kulturobjekt) 
+        AND 
+        (Code_kommunal == "8220")  
+      )
+      OR
+      (
+        (Typ_Kt == #N823_erhaltenswertes_Kulturobjekt) 
+        AND 
+        (Code_kommunal == "8230")  
+      );
     END v_Typ_Ueberlagernd_Flaeche;    
   END Nutzungsplanung_Validierung;
   
